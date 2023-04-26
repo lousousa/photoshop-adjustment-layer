@@ -1,6 +1,6 @@
 # Adobe Photoshop Script Utility
 
-## Apply Adjustment Layers to a Layers Group
+## Apply Adjustment Layers to Layers Group
 
 This Adobe Photoshop script utility performs the merging of one or more adjustment layers into a group of layers.
 
@@ -21,4 +21,4 @@ Add the JSX file to the `Presets/Scripts` directory, on Adobe Photoshop's instal
 
 3. In Adobe Photoshop's editor menu, select the option `File > Scripts > Apply Adjustment Layers to Layer Group`.
 
-![how-to-1](https://user-images.githubusercontent.com/2921281/234687412-2b30c7c4-cb38-4f1b-9a79-2419475a7b7a.jpg)
+![how-to-1](https://user-images.githubusercontent.com/2921281/234698474-82072574-623e-4636-b46e-a7d0298f46c8.jpg)
