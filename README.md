@@ -8,7 +8,7 @@ This Photoshop script utility allows it to apply an adjustment layer in a group 
 
 ### How to install
 
-Add the JSX file to the `Presets/Scripts` directory, on the Adobe Photoshop's installation directory.
+Add the JSX file to the `Presets/Scripts` directory, on Adobe Photoshop's installation directory.
 
 ### How to use
 
