@@ -18,6 +18,6 @@ Add the JSX file to the `Presets/Scripts` directory, on Adobe Photoshop's instal
 
 ![how-to-2](https://user-images.githubusercontent.com/2921281/234687347-c8141174-c32f-4d99-a4f9-e281f402aecc.jpg)
 
-3. In Adobe Photoshop's editor menu, select the option `File > Scripts > Apply Adjustment Layer to Group`.
+3. In Adobe Photoshop's editor menu, select the option `File > Scripts > Apply Adjustment Layers to Layer Group`.
 
 ![how-to-1](https://user-images.githubusercontent.com/2921281/234687412-2b30c7c4-cb38-4f1b-9a79-2419475a7b7a.jpg)
