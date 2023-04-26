@@ -7,11 +7,11 @@ This Adobe Photoshop script utility performs a merging of one or more adjustment
 ### Demonstration
 ![demo](https://user-images.githubusercontent.com/2921281/234687312-b8d60447-b988-41da-bcd7-ee4ba8909780.gif)
 
-### How to install
+## How to install
 
 Add the JSX file to the `Presets/Scripts` directory, on Adobe Photoshop's installation directory.
 
-### How to use
+## How to use
 
 1. Add the destination layers to a folder group and rename it to **"target"**.
 
