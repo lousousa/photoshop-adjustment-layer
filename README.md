@@ -1,6 +1,6 @@
 # Adobe Photoshop Script Utility
 
-## Apply an Adjustment Layer to a Group
+## Apply Adjustment Layers to a Layers Group
 
 This Adobe Photoshop script utility performs the merging of one or more adjustment layers into a group of layers.
 
