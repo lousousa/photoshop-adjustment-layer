@@ -7,49 +7,13 @@ This Photoshop script utility allows it to apply an adjustment layer in a group 
 ![preview](https://user-images.githubusercontent.com/2921281/138190027-abd4eeeb-fcc2-4976-99f5-2d67e1e771e8.gif)
 
 ### How to install
-[TODO]
+
+Add the JSX file to the `Presets/Scripts` directory, on the Adobe Photoshop's installation directory.
 
 ### How to use
-[TODO]
 
-### Raw code
-```
-app.activeDocument.suspendHistory("Script", "f()")
+1. Add the destination layers to a folder group and rename it to "target".
 
-function f() {
-    var doc = activeDocument
-    var adjLayer = doc.activeLayer
+2. Select the adjustments layers you want to merge in the each layer of the target group.
 
-    if (! isAdjustmentLayer(adjLayer)) {
-        alert('please, select an adjustment layer.')
-        return
-    }
-
-    try {
-        var applyGroup = doc.layerSets.getByName('apply')
-        var artLayers = applyGroup.artLayers
-        
-        for (var i = 0; i < artLayers.length; i++) {
-            if (!artLayers[i].allLocked && !isAdjustmentLayer(artLayers[i])) {
-                var copy = adjLayer.duplicate(artLayers[i], ElementPlacement.PLACEBEFORE)
-                doc.activeLayer = copy
-                executeAction(stringIDToTypeID("mergeLayersNew"), undefined, DialogModes.NO)
-            }
-        }
-
-        adjLayer.remove()
-    } catch(err) {
-        alert(err)
-    }
-    return
-}
-
-function isAdjustmentLayer(layer) {
-    var ref = new ActionReference()
-    ref.putIdentifier(charIDToTypeID("Lyr "), layer.id)
-    var desc = executeActionGet(ref)
-    var layerType = typeIDToStringID(desc.getEnumerationValue(stringIDToTypeID('layerSection')))
-    if (layerType != 'layerSectionContent') return false
-    return desc.hasKey(stringIDToTypeID('adjustment'))
-}
-```
+3. In the Adobe Photoshop's editor menu, select the option `File > Scripts > Apply Adjustment Layer to Group`
