@@ -33,29 +33,26 @@ function main() {
   for (var i = 0; i < layers.length; i++) {
     var adjLayer = layers[i]
 
-    if (! isAdjustmentLayer(adjLayer)) {
+    if (!isAdjustmentLayer(adjLayer)) {
       alert('please, select an adjustment layer.')
       return
     }
 
     try {
-      var applyGroup = doc.layerSets.getByName('target')
-      var artLayers = applyGroup.artLayers
+      var targetGroup = doc.layerSets.getByName('target')
+      var artLayers = targetGroup.artLayers
 
-      for (var i = 0; i < artLayers.length; i++) {
-        if (!artLayers[i].allLocked && !isAdjustmentLayer(artLayers[i])) {
-          var copy = adjLayer.duplicate(artLayers[i], ElementPlacement.PLACEBEFORE)
+      for (var j = 0; j < artLayers.length; j++) {
+        if (!artLayers[j].allLocked && !isAdjustmentLayer(artLayers[j])) {
+          var copy = adjLayer.duplicate(artLayers[j], ElementPlacement.PLACEBEFORE)
           doc.activeLayer = copy
           executeAction(stringIDToTypeID("mergeLayersNew"), undefined, DialogModes.NO)
         }
       }
-
-      adjLayer.remove()
     } catch(err) {
       alert(err)
     }
   }
 
   group.remove()
-  return
 }
