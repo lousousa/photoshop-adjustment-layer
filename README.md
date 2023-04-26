@@ -14,6 +14,6 @@ Add the JSX file to the `Presets/Scripts` directory, on the Adobe Photoshop's in
 
 1. Add the destination layers to a folder group and rename it to "target".
 
-2. Select the adjustments layers you want to merge in the each layer of the target group.
+2. Select the adjustment layers you want to merge in each layer of the target group.
 
-3. In the Adobe Photoshop's editor menu, select the option `File > Scripts > Apply Adjustment Layer to Group`
+3. In Adobe Photoshop's editor menu, select the option `File > Scripts > Apply Adjustment Layer to Group`.
